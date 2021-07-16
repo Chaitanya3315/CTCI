@@ -8,7 +8,7 @@ public class IsUnique {
       for(int i=0;i<s.length();i++){
          if(arr[s.charAt(i)]==true){
             ans=false;
-            return;
+            break;
 
          }else{
             arr[s.charAt(i)]=true;
