@@ -63,7 +63,6 @@ public class RotateMatrix {
        System.out.println();
        obj.rotate2(arr, size);
        obj.display(arr,size);
-       
-      
+
     }
 }
