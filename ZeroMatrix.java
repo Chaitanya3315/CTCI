@@ -77,4 +77,3 @@ public class ZeroMatrix {
         sc.close();
     }
 }
-
