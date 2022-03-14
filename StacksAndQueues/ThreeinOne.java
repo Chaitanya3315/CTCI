@@ -8,12 +8,12 @@ class EmptyStackException extends Exception{
 
 }
 
-public class Stacks {
+public class ThreeinOne {
     int[] values;
     int[] size;
     int capacity;
     int noOfStacks=3;
-    Stacks(int size){
+    ThreeinOne(int size){
         capacity=size;
         values=new int[size*noOfStacks];
         this.size=new int[noOfStacks];
@@ -53,7 +53,7 @@ public class Stacks {
     public static void main(String[] args)throws FullStackExecption{
         Scanner sc =new Scanner(System.in);
         int size=sc.nextInt();
-        Stacks st=new Stacks(size);
+        ThreeinOne st=new ThreeinOne(size);
         st.push(0,1);
         st.push(0,1);
         st.push(0,1);
