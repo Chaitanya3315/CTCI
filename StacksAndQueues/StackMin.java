@@ -35,7 +35,6 @@ public class StackMin {
     }
 
     public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
         StackMin stack=new StackMin();
         stack.push(3);
         stack.push(5);

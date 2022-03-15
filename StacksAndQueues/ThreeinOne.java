@@ -62,5 +62,6 @@ public class ThreeinOne {
         st.push(1,1);
         st.push(2,1);
         System.out.println(st.isEmpty(1));
+        sc.close();
     }
 }
