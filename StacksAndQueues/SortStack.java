@@ -24,7 +24,7 @@ public class SortStack {
         st.push(7);
         sort(st);
         while(!st.isEmpty()){
-            System.out.println(st.pop());
+           System.out.println(st.pop());
         }
     }
 }
