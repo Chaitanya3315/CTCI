@@ -25,6 +25,29 @@ public class Partition {
         newNode.next= head;
          head=newNode;
     }
+    public Node partition2(Node head, int x) {
+
+        Node head1 = new Node(0);
+        Node p1 = head1;
+        Node head2 = new Node(0);
+        Node p2 = head2;
+
+        while (head != null) {
+            
+            if (head.data < x) {
+                p1.next = head;
+                p1 = p1.next;
+            } else {
+                p2.next = head;
+                p2 = p2.next;
+            }
+            head = head.next;
+        }
+        p2.next = null;
+        p1.next = head2.next;
+
+        return head1.next;
+    }
     public Node partition(Node node,int x){
         Node newhead=node;
         Node tail=node;
