@@ -43,9 +43,25 @@ public class RemoveDups {
         }
 
     }
+
+    public void removeDups2(Node head){
+        Node cur=head;
+        while(cur!=null){
+            Node run=cur;
+            while(run.next!=null){
+                if(run.next.data==cur.data){
+                    run.next=run.next.next;
+                }else{
+                    run=run.next;
+                }
+            }
+            cur=cur.next;
+        }
+        return;
+    }
     public static void main(String[] args){
         RemoveDups obj = new RemoveDups();
-        obj.head = new Node(1); 
+        obj.head = new Node(4); 
         obj.push(3);
         obj.push(3);
         obj.push(2);
@@ -54,7 +70,7 @@ public class RemoveDups {
         obj.push(3);
         obj.push(4);
         obj.printList();
-        obj.removeDups(obj.head);
+        obj.removeDups2(obj.head);
         System.out.println("After removing the duplicates");
         obj.printList();
 
